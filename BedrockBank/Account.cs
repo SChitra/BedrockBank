@@ -32,7 +32,24 @@ namespace BedrockBank
 
 
         #region Methods
+        /// <summary>
+        /// Deposit money into your account
+        /// </summary>
+        /// <param name="amount">Money to depsoit</param>
+        /// <returns>New balance</returns>
+        public decimal Deposit(decimal amount)
+        {
+           //Balance = Balance + amount;
+            Balance += amount;
+            return Balance;
 
+        }
+
+        public decimal Withdrawal(decimal amount)
+        {
+            Balance -= amount;
+            return Balance;
+        }
         #endregion
 
 
